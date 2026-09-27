@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TIME — What Is Time?</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:Inter,system-ui,-apple-system,Segoe UI,Arial,sans-serif;
+  color:#eef3ff;background:#050711;line-height:1.7;overflow-x:hidden
+}
+body:before{
+  content:"";position:fixed;inset:0;z-index:-2;
+  background:
+    radial-gradient(circle at 20% 20%,rgba(82,115,255,.15),transparent 30%),
+    radial-gradient(circle at 80% 65%,rgba(145,75,255,.12),transparent 30%),
+    #050711
+}
+body:after{
+  content:"";position:fixed;inset:0;z-index:-1;opacity:.5;
+  background-image:
+    radial-gradient(circle,#fff 1px,transparent 1px),
+    radial-gradient(circle,#8eb5ff 1px,transparent 1px);
+  background-size:120px 120px,190px 190px;
+  background-position:20px 40px,80px 100px;
+}
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:10;
+  display:flex;justify-content:space-between;align-items:center;
+  padding:16px 6%;backdrop-filter:blur(14px);
+  background:rgba(5,7,17,.72);border-bottom:1px solid #ffffff12
+}
+.logo{font-weight:800;letter-spacing:3px}
+nav a{color:#cbd5f6;text-decoration:none;margin-left:22px;font-size:.9rem}
+nav a:hover{color:white}
+.hero{min-height:100vh;display:grid;place-items:center;text-align:center;padding:120px 7% 70px}
+.hero h1{font-size:clamp(4rem,13vw,9rem);letter-spacing:-7px;line-height:.85}
+.gradient{background:linear-gradient(90deg,#fff,#8fb1ff,#d8a7ff);color:transparent;background-clip:text}
+.hero p{max-width:760px;margin:30px auto;font-size:1.2rem;color:#b9c4e3}
+.btn{
+ display:inline-block;padding:12px 20px;border:1px solid #ffffff2b;border-radius:999px;
+ color:white;text-decoration:none;background:#ffffff0b;margin:6px
+}
+.btn:hover{background:#ffffff18}
+section{max-width:1100px;margin:auto;padding:100px 6%}
+.eyebrow{color:#9fb8ff;text-transform:uppercase;letter-spacing:3px;font-size:.78rem;font-weight:700}
+h2{font-size:clamp(2.2rem,5vw,4rem);line-height:1.05;margin:10px 0 25px}
+h3{margin-bottom:10px}
+.lead{font-size:1.12rem;color:#c4cde4;max-width:800px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:35px}
+.card{
+ padding:25px;border:1px solid #ffffff14;border-radius:20px;
+ background:linear-gradient(145deg,#ffffff0d,#ffffff03);
+ box-shadow:0 15px 50px #00000022
+}
+.card p{color:#aeb9d3}
+.quote{
+ margin:35px 0;padding:25px 30px;border-left:3px solid #9fb8ff;
+ background:#ffffff08;border-radius:0 16px 16px 0;font-size:1.15rem
+}
+.string-box{
+ margin-top:40px;padding:30px;border:1px solid #ffffff18;border-radius:24px;background:#070a18
+}
+.string{
+ position:relative;height:120px;display:flex;align-items:center
+}
+.string:before{
+ content:"";position:absolute;left:2%;right:2%;height:5px;border-radius:5px;
+ background:linear-gradient(90deg,#536dff,#b995ff,#fff)
+}
+.dot{
+ width:24px;height:24px;border-radius:50%;background:white;position:absolute;left:50%;
+ transform:translateX(-50%);box-shadow:0 0 30px #b7caff
+}
+.labels{display:flex;justify-content:space-between;color:#8f9bbb;font-size:.85rem}
+.present{text-align:center;margin-top:10px;color:#fff}
+.controls{text-align:center;margin-top:20px}
+button{
+ cursor:pointer;color:white;background:#ffffff0b;border:1px solid #ffffff24;
+ border-radius:10px;padding:10px 16px;margin:4px
+}
+button:hover{background:#ffffff18}
+.research-list{display:grid;gap:12px;margin-top:25px}
+.research-list div{
+ padding:18px 20px;border:1px solid #ffffff12;border-radius:14px;background:#ffffff06
+}
+footer{padding:60px 6%;text-align:center;border-top:1px solid #ffffff12;color:#8290af}
+.small{font-size:.9rem;color:#8290af}
+@media(max-width:700px){nav .links{display:none}.hero h1{letter-spacing:-4px}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">TIME</div>
+  <div class="links">
+    <a href="#what">What is time?</a>
+    <a href="#einstein">Einstein</a>
+    <a href="#string">My idea</a>
+    <a href="#questions">Questions</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div>
+    <div class="eyebrow">A journey through physics & philosophy</div>
+    <h1><span class="gradient">TIME</span></h1>
+    <p>
+      What is time? Do we move through it, or are we simply experiencing
+      different points in spacetime?
+    </p>
+    <a class="btn" href="#what">Start exploring ↓</a>
+    <a class="btn" href="#string">Explore the Time String</a>
+  </div>
+</header>
+
+<section id="what">
+  <div class="eyebrow">01 · The question</div>
+  <h2>What is time?</h2>
+  <p class="lead">
+    We use clocks to measure time, but a clock measures change. Time is one
+    of the fundamental concepts we use to describe when events happen and
+    the order in which they happen.
+  </p>
+
+  <div class="grid">
+    <div class="card"><h3>Past</h3><p>Events that have already happened relative to an observer.</p></div>
+    <div class="card"><h3>Present</h3><p>The moment we experience as “now”. What counts as a universal present is complicated by relativity.</p></div>
+    <div class="card"><h3>Future</h3><p>Events that have not yet occurred in an observer's experience.</p></div>
+  </div>
+
+  <div class="quote">
+    “If nothing changed, there would be no physical event by which we could notice time passing.”
+  </div>
+</section>
+
+<section id="einstein">
+  <div class="eyebrow">02 · Relativity</div>
+  <h2>Einstein changed the picture.</h2>
+  <p class="lead">
+    In special and general relativity, time is not an identical universal
+    clock shared by every observer. Space and time are combined into
+    <strong>spacetime</strong>, and measurements of elapsed time depend on
+    motion and gravity.
+  </p>
+
+  <div class="grid">
+    <div class="card"><h3>Time dilation</h3><p>A moving clock can measure less elapsed time between events than a clock in another frame.</p></div>
+    <div class="card"><h3>Gravity</h3><p>Clocks at different gravitational potentials can accumulate different amounts of elapsed time.</p></div>
+    <div class="card"><h3>Spacetime</h3><p>Events are described using both spatial coordinates and a time coordinate.</p></div>
+  </div>
+  <p class="small" style="margin-top:20px">
+    This website presents simplified explanations for learning; relativity is more mathematically precise than these summaries.
+  </p>
+</section>
+
+<section id="arrow">
+  <div class="eyebrow">03 · The arrow of time</div>
+  <h2>Why does time seem to have a direction?</h2>
+  <p class="lead">
+    Many fundamental physical equations can work in both temporal directions,
+    yet our everyday experience has a strong direction: we remember the past,
+    not the future. Thermodynamics connects this everyday “arrow of time”
+    with increasing entropy in an isolated system.
+  </p>
+</section>
+
+<section id="string">
+  <div class="eyebrow">04 · My idea</div>
+  <h2>The Time String 🧵</h2>
+  <p class="lead">
+    This is a personal analogy for thinking about time, not a claim that
+    physics has established that time is literally a string.
+  </p>
+
+  <div class="string-box">
+    <div class="string">
+      <div class="dot" id="dot"></div>
+    </div>
+    <div class="labels"><span>PAST</span><span>FUTURE</span></div>
+    <div class="present">↑ Our present position</div>
+    <div class="controls">
+      <button onclick="move(-1)">← Move toward past</button>
+      <button onclick="resetDot()">Present</button>
+      <button onclick="move(1)">Move toward future →</button>
+    </div>
+  </div>
+
+  <div class="quote">
+    “I think of time as a string. The past is the part of the string behind us,
+    the future is the part ahead of us, and the journey along the string is the present.”
+  </div>
+
+  <div class="grid">
+    <div class="card"><h3>Question 1</h3><p>Is the future already part of the string, or is it created as we move?</p></div>
+    <div class="card"><h3>Question 2</h3><p>If the string has an end, what would “after the end of time” even mean?</p></div>
+    <div class="card"><h3>Question 3</h3><p>If the string is endless, does time continue forever?</p></div>
+  </div>
+</section>
+
+<section id="philosophy">
+  <div class="eyebrow">05 · Philosophy</div>
+  <h2>Does the future already exist?</h2>
+  <p class="lead">
+    Philosophy of time contains competing views. <strong>Presentism</strong>
+    treats the present as especially real, while <strong>eternalism</strong>
+    treats past, present and future as parts of a larger spacetime picture.
+    Relativity creates difficult questions for the idea of one universal “now”.
+  </p>
+</section>
+
+<section id="questions">
+  <div class="eyebrow">06 · Open questions</div>
+  <h2>The investigation continues.</h2>
+  <div class="research-list">
+    <div>Could time have a beginning?</div>
+    <div>Could time have an end?</div>
+    <div>Why does time have an apparent direction?</div>
+    <div>Is time fundamental, or could it emerge from something deeper?</div>
+    <div>What does quantum physics tell us about time?</div>
+    <div>Does the “present” have a special physical meaning?</div>
+  </div>
+</section>
+
+<section>
+  <div class="eyebrow">07 · Important distinction</div>
+  <h2>Analogy ≠ proof.</h2>
+  <p class="lead">
+    The Time String is a way to visualize questions about time. A scientific
+    theory needs mathematical definitions, predictions, evidence and testing.
+    The goal of this project is to explore the questions first.
+  </p>
+</section>
+
+<footer>
+  <p>TIME — A personal exploration of physics and philosophy</p>
+  <p class="small">Research project · The Time String is presented as a personal thought experiment.</p>
+</footer>
+
+<script>
+let position = 50;
+const dot = document.getElementById("dot");
+function render(){
+  dot.style.left = position + "%";
+}
+function move(direction){
+  position = Math.max(5, Math.min(95, position + direction * 5));
+  render();
+}
+function resetDot(){
+  position = 50;
+  render();
+}
+render();
+</script>
+</body>
+</html>
